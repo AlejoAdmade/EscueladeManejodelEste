@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://alejoadmade.github.io/EscueladeManejodelEste/sitemap.xml
