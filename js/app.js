@@ -1,3 +1,4 @@
+document.body.classList.add("js-ready");
 const DATA = window.SITE_DATA;
 
 const icons = {
