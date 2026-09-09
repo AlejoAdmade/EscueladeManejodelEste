@@ -20,10 +20,8 @@ function renderCourses() {
       <span class="course-tag">${course.tag}</span>
       <h3>${course.title}</h3>
       <p>${course.text}</p>
-      <ul>${course.bullets.map(b => `<li><span>✓</span>${b}</li>`).join('')}</ul>
       <div class="course-actions">
-        <a href="${course.page}" class="course-detail-link">${currentLang === 'es' ? 'Ver detalles' : 'View details'} <span>↗</span></a>
-        <a href="#" class="course-link js-whatsapp" data-message="${course.message}">${currentLang === 'es' ? 'Solicitar información' : 'Request info'} <span>→</span></a>
+        <a href="${course.page}" class="course-detail-link course-detail-button">${currentLang === 'es' ? 'Ver detalles' : 'View details'} <span>→</span></a>
       </div>
     </article>
   `).join('');
@@ -151,7 +149,7 @@ function setupProcessDemo() {
 }
 
 function applySiteData() {
-  ['instagramBtn','footerInstagram','socialInstagram'].forEach(id => { const el=document.getElementById(id); if(el) el.href=DATA.instagram; });
+  ['instagramBtn','aboutInstagram','footerInstagram','socialInstagram'].forEach(id => { const el=document.getElementById(id); if(el) el.href=DATA.instagram; });
   const addressText = document.getElementById('addressText'); if (addressText) addressText.textContent = DATA.address;
   const mapAddress = document.getElementById('mapAddress'); if (mapAddress) mapAddress.textContent = `${DATA.address} · ${DATA.addressDetail}`;
   const whatsappText = document.getElementById('whatsappText'); if (whatsappText) whatsappText.textContent = DATA.phoneDisplay;
