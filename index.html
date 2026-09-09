@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Escuela de Manejo Panamá Este. Cursos teóricos, prácticos, primera licencia, ampliaciones y reforzamiento." />
+  <meta name="theme-color" content="#07152f" />
+  <meta property="og:title" content="Escuela de Manejo Panamá Este" />
+  <meta property="og:description" content="Aprende a manejar con seguridad, confianza y acompañamiento profesional." />
+  <meta property="og:type" content="website" />
+  <title>Escuela de Manejo Panamá Este</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-wrap">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img"><path d="M32 4c15.5 0 28 12.5 28 28S47.5 60 32 60 4 47.5 4 32 16.5 4 32 4Zm0 8a20 20 0 1 0 0 40 20 20 0 0 0 0-40Zm-3 6h6l1 10 8 17h-8l-4-9-4 9h-8l8-17 1-10Z"/></svg>
+        </span>
+        <span>
+          <strong>Escuela de Manejo</strong>
+          <small>Panamá Este</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#cursos">Cursos</a>
+        <a href="#proceso">Cómo funciona</a>
+        <a href="#licencias">Licencias</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-sm btn-ghost desktop-cta" href="#contacto">Contacto</a>
+        <a class="btn btn-sm btn-accent desktop-cta js-whatsapp" href="#" data-message="Hola, quisiera información sobre los cursos de manejo.">Cotizar</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#cursos">Cursos</a>
+      <a href="#proceso">Cómo funciona</a>
+      <a href="#licencias">Licencias</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-accent js-whatsapp" href="#" data-message="Hola, quisiera información sobre los cursos de manejo.">Escribir por WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-dark" id="inicio">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="pulse-dot"></span> Formación vial en Panamá Este</div>
+          <h1>Tu licencia empieza con <span>confianza al volante.</span></h1>
+          <p class="hero-lead">Aprende desde cero, refuerza tus habilidades o amplía tu licencia con acompañamiento profesional y un proceso claro de principio a fin.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent btn-lg js-whatsapp" href="#" data-message="Hola, quiero información para iniciar un curso de manejo.">Quiero empezar <span>→</span></a>
+            <a class="btn btn-glass btn-lg" href="#cursos">Ver cursos</a>
+          </div>
+          <div class="trust-row">
+            <div><strong>Teoría + práctica</strong><span>Formación completa</span></div>
+            <div><strong>Horarios flexibles</strong><span>Organiza tus clases</span></div>
+            <div><strong>Panamá Este</strong><span>Cerca de ti</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay">
+          <div class="hero-photo">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=85" alt="Vehículo en carretera" />
+            <div class="photo-shade"></div>
+            <div class="floating-card card-top">
+              <span class="icon-bubble">✓</span>
+              <div><strong>Aprende paso a paso</strong><small>Con instructores capacitados</small></div>
+            </div>
+            <div class="floating-card card-bottom">
+              <span class="mini-label">ELIGE TU CAMINO</span>
+              <div class="road-options">
+                <span>Primera licencia</span><span>Reforzamiento</span><span>Ampliación</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-ring ring-one"></div>
+          <div class="hero-ring ring-two"></div>
+        </div>
+      </div>
+
+      <div class="scroll-hint"><span></span> Descubre más</div>
+    </section>
+
+    <section class="quick-strip">
+      <div class="container quick-grid">
+        <div><span class="quick-icon">01</span><p><strong>Escríbenos</strong><small>Te orientamos según tu objetivo.</small></p></div>
+        <div><span class="quick-icon">02</span><p><strong>Elige tu curso</strong><small>Teoría, práctica o ampliación.</small></p></div>
+        <div><span class="quick-icon">03</span><p><strong>Agenda tus clases</strong><small>Coordina el horario ideal.</small></p></div>
+        <div><span class="quick-icon">04</span><p><strong>Sal a conducir</strong><small>Practica con seguridad.</small></p></div>
+      </div>
+    </section>
+
+    <section class="section" id="cursos">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><span class="kicker">NUESTROS CURSOS</span><h2>Una ruta para cada conductor.</h2></div>
+          <p>No importa si es tu primera vez frente al volante o si ya tienes experiencia. Elige el tipo de formación que mejor se adapta a ti.</p>
+        </div>
+
+        <div class="course-grid" id="courseGrid"></div>
+
+        <div class="course-note reveal">
+          <div><span class="note-icon">i</span><p><strong>¿No sabes cuál elegir?</strong><br><span>Cuéntanos tu situación y te orientamos sin compromiso.</span></p></div>
+          <a class="text-link js-whatsapp" href="#" data-message="Hola, no sé cuál curso necesito. ¿Me pueden orientar?">Hablar con un asesor →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="proceso">
+      <div class="container process-layout">
+        <div class="process-copy reveal">
+          <span class="kicker">UN PROCESO SIMPLE</span>
+          <h2>De “quiero aprender” a sentirte seguro manejando.</h2>
+          <p>Diseñamos una experiencia clara para que sepas qué sigue en cada etapa, sin complicaciones ni vueltas innecesarias.</p>
+          <div class="process-steps">
+            <article class="process-step active" data-step="1"><span>01</span><div><h3>Cuéntanos qué necesitas</h3><p>Primera licencia, práctica, reforzamiento o ampliación.</p></div></article>
+            <article class="process-step" data-step="2"><span>02</span><div><h3>Coordinamos tu plan</h3><p>Selecciona el curso y organiza tus horarios.</p></div></article>
+            <article class="process-step" data-step="3"><span>03</span><div><h3>Aprende y practica</h3><p>Formación progresiva con acompañamiento.</p></div></article>
+            <article class="process-step" data-step="4"><span>04</span><div><h3>Avanza hacia tu licencia</h3><p>Te orientamos sobre los siguientes pasos del proceso.</p></div></article>
+          </div>
+        </div>
+        <div class="process-visual reveal reveal-delay">
+          <div class="phone-shell">
+            <div class="phone-top"></div>
+            <div class="phone-screen">
+              <div class="phone-brand"><span class="brand-mini">EM</span><strong>Tu ruta de aprendizaje</strong></div>
+              <div class="phone-card">
+                <small>PASO ACTUAL</small><strong id="phoneStepTitle">Cuéntanos qué necesitas</strong>
+                <p id="phoneStepText">Primera licencia, práctica, reforzamiento o ampliación.</p>
+                <div class="phone-progress"><span id="phoneProgress"></span></div>
+              </div>
+              <div class="phone-list"><span>✓ Atención personalizada</span><span>✓ Horarios coordinados</span><span>✓ Acompañamiento</span></div>
+              <button type="button" class="fake-button">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark licenses" id="licencias">
+      <div class="container">
+        <div class="section-heading center-heading reveal">
+          <span class="kicker kicker-light">AMPLIACIONES Y CATEGORÍAS</span>
+          <h2>Más posibilidades detrás del volante.</h2>
+          <p>Explora algunas de las categorías de licencia sobre las que puedes solicitar orientación.</p>
+        </div>
+        <div class="license-grid">
+          <article class="license-card reveal"><span class="license-code">C</span><h3>Vehículo particular</h3><p>Ideal para quienes desean conducir automóviles particulares.</p><a class="js-whatsapp" href="#" data-message="Hola, quiero información sobre licencia categoría C.">Consultar →</a></article>
+          <article class="license-card reveal"><span class="license-code">D</span><h3>Transporte liviano</h3><p>Consulta requisitos y formación según la categoría que necesitas.</p><a class="js-whatsapp" href="#" data-message="Hola, quiero información sobre licencia categoría D.">Consultar →</a></article>
+          <article class="license-card featured reveal"><div class="featured-pill">POPULAR</div><span class="license-code">E1</span><h3>Transporte selectivo</h3><p>Orientación para quienes buscan ampliar hacia transporte selectivo.</p><a class="js-whatsapp" href="#" data-message="Hola, quiero información sobre ampliación a licencia E1.">Consultar →</a></article>
+          <article class="license-card reveal"><span class="license-code">E2</span><h3>Transporte colectivo</h3><p>Conoce el proceso aplicable para ampliar tu categoría de licencia.</p><a class="js-whatsapp" href="#" data-message="Hola, quiero información sobre ampliación a licencia E2.">Consultar →</a></article>
+          <article class="license-card reveal"><span class="license-code">E3</span><h3>Transporte colectivo</h3><p>Te orientamos sobre requisitos y pasos correspondientes.</p><a class="js-whatsapp" href="#" data-message="Hola, quiero información sobre ampliación a licencia E3.">Consultar →</a></article>
+          <article class="license-card reveal"><span class="license-code">F</span><h3>Vehículos pesados</h3><p>Consulta la formación requerida para categorías profesionales.</p><a class="js-whatsapp" href="#" data-message="Hola, quiero información sobre ampliación a licencia F.">Consultar →</a></article>
+        </div>
+        <p class="legal-note">* Las categorías, requisitos, disponibilidad y certificaciones deben confirmarse directamente con la escuela según la normativa vigente.</p>
+      </div>
+    </section>
+
+    <section class="section" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-gallery reveal">
+          <figure class="about-main"><img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1200&q=85" alt="Interior de vehículo moderno" /></figure>
+          <figure class="about-small"><img src="https://images.unsplash.com/photo-1493238792000-8113da705763?auto=format&fit=crop&w=900&q=85" alt="Vehículo en carretera" /></figure>
+          <div class="experience-badge"><strong>Panamá Este</strong><span>Formación vial cerca de ti</span></div>
+        </div>
+        <div class="about-copy reveal reveal-delay">
+          <span class="kicker">APRENDE CON CONFIANZA</span>
+          <h2>No se trata solo de pasar una prueba. Se trata de saber conducir.</h2>
+          <p>La seguridad se construye con práctica, orientación y buenos hábitos desde el primer día. Nuestro enfoque busca que cada estudiante avance a su ritmo y gane confianza en situaciones reales.</p>
+          <div class="feature-list">
+            <div><span>✓</span><p><strong>Atención cercana</strong><small>Orientación según tu experiencia y objetivo.</small></p></div>
+            <div><span>✓</span><p><strong>Aprendizaje progresivo</strong><small>De lo básico a situaciones de mayor confianza.</small></p></div>
+            <div><span>✓</span><p><strong>Formación práctica</strong><small>Con énfasis en seguridad y buenos hábitos.</small></p></div>
+            <div><span>✓</span><p><strong>Opciones para distintos perfiles</strong><small>Aprendices, conductores y ampliaciones.</small></p></div>
+          </div>
+          <a class="btn btn-dark js-whatsapp" href="#" data-message="Hola, quiero conocer más sobre la escuela y sus cursos.">Conocer mis opciones <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vehicles-section">
+      <div class="container">
+        <div class="section-heading split-heading reveal">
+          <div><span class="kicker">PRÁCTICA REAL</span><h2>Aprende sintiéndote cómodo.</h2></div>
+          <p>Una buena experiencia de aprendizaje empieza con un entorno donde puedas concentrarte en dominar cada maniobra.</p>
+        </div>
+        <div class="vehicle-showcase reveal">
+          <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=1600&q=88" alt="Automóvil moderno" />
+          <div class="vehicle-overlay">
+            <span>PRÁCTICA</span>
+            <h3>Del primer arranque<br>al control total.</h3>
+            <div class="vehicle-tags"><span>Estacionamiento</span><span>Control del vehículo</span><span>Señalización</span><span>Seguridad vial</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft testimonials">
+      <div class="container">
+        <div class="section-heading center-heading reveal">
+          <span class="kicker">EXPERIENCIA DEL ESTUDIANTE</span>
+          <h2>Aprender a manejar cambia mucho más que tu movilidad.</h2>
+          <p>Testimonios de ejemplo para mostrar cómo se verían las experiencias reales de estudiantes.</p>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card reveal"><div class="stars">★★★★★</div><blockquote>“Llegué con muchísimo nervio y poco a poco fui ganando confianza. Las clases se sintieron claras y prácticas.”</blockquote><div class="student"><span>AM</span><div><strong>Andrea M.</strong><small>Curso para aprendiz</small></div></div></article>
+          <article class="testimonial-card reveal"><div class="stars">★★★★★</div><blockquote>“Lo que más me gustó fue poder coordinar las clases y practicar exactamente lo que más se me dificultaba.”</blockquote><div class="student"><span>JR</span><div><strong>José R.</strong><small>Clases de reforzamiento</small></div></div></article>
+          <article class="testimonial-card reveal"><div class="stars">★★★★★</div><blockquote>“Me explicaron el proceso de ampliación de forma sencilla y pude saber desde el inicio qué necesitaba.”</blockquote><div class="student"><span>LC</span><div><strong>Laura C.</strong><small>Ampliación de licencia</small></div></div></article>
+        </div>
+        <div class="demo-disclaimer">* Textos demostrativos. Reemplazar por reseñas reales antes del lanzamiento.</div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <span class="kicker">PREGUNTAS FRECUENTES</span>
+          <h2>Lo que probablemente quieres saber antes de empezar.</h2>
+          <p>Si tu pregunta no aparece aquí, escríbenos y te orientamos directamente.</p>
+          <a class="text-link js-whatsapp" href="#" data-message="Hola, tengo una pregunta sobre los cursos de manejo.">Hacer otra pregunta →</a>
+        </div>
+        <div class="accordion reveal reveal-delay" id="faqList"></div>
+      </div>
+    </section>
+
+    <section class="instagram-section section-dark">
+      <div class="container instagram-grid">
+        <div class="instagram-copy reveal">
+          <span class="kicker kicker-light">SÍGUENOS EN INSTAGRAM</span>
+          <h2>Consejos, promociones y vida en la escuela.</h2>
+          <p>Mantente al día con nuestras novedades y contenido para futuros conductores.</p>
+          <a class="btn btn-glass" id="instagramBtn" target="_blank" rel="noopener">@escuelademanejopanamaeste <span>↗</span></a>
+        </div>
+        <div class="social-mosaic reveal reveal-delay">
+          <div class="social-card card-a"><span>APRENDE</span><strong>Conduce con seguridad.</strong></div>
+          <div class="social-card card-b"><span>PRÁCTICA</span><strong>La confianza se entrena.</strong></div>
+          <div class="social-card card-c"><span>AVANZA</span><strong>Tu próxima categoría te espera.</strong></div>
+          <div class="social-card card-d"><span>EMPEZAMOS</span><strong>¿Listo para tu primera clase?</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container contact-wrap reveal">
+        <div class="contact-info">
+          <span class="kicker">HABLEMOS</span>
+          <h2>Tu próxima ruta puede empezar hoy.</h2>
+          <p>Déjanos tus datos y abriremos una conversación de WhatsApp con tu solicitud lista para enviar.</p>
+          <div class="contact-facts">
+            <div><span>⌖</span><p><strong>Ubicación</strong><small id="addressText">Panamá Este</small></p></div>
+            <div><span>◷</span><p><strong>Horario</strong><small id="hoursText">Lunes a sábado</small></p></div>
+            <div><span>◎</span><p><strong>Instagram</strong><small>@escuelademanejopanamaeste</small></p></div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <label>Nombre<input type="text" id="name" placeholder="Tu nombre" required /></label>
+            <label>Teléfono<input type="tel" id="phone" placeholder="6000-0000" /></label>
+          </div>
+          <label>¿Qué necesitas?
+            <select id="interest" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option>Aprender desde cero</option>
+              <option>Clases de reforzamiento</option>
+              <option>Primera licencia</option>
+              <option>Ampliación de licencia</option>
+              <option>Otro</option>
+            </select>
+          </label>
+          <label>Cuéntanos un poco más<textarea id="message" rows="4" placeholder="Ej. Ya sé manejar automático, pero quiero reforzar estacionamiento..."></textarea></label>
+          <button class="btn btn-accent btn-lg" type="submit">Enviar por WhatsApp <span>→</span></button>
+          <small class="form-note">No se guardan datos en esta página. Al enviar, se abrirá WhatsApp.</small>
+        </form>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <iframe id="mapFrame" title="Mapa de ubicación" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      <div class="map-card">
+        <span class="kicker">ENCUÉNTRANOS</span>
+        <h3>Panamá Este</h3>
+        <p id="mapAddress">La Doña, Panamá</p>
+        <a class="text-link" id="mapsLink" target="_blank" rel="noopener">Abrir en Google Maps →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-dark">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand brand-footer" href="#inicio"><span class="brand-mark"><svg viewBox="0 0 64 64"><path d="M32 4c15.5 0 28 12.5 28 28S47.5 60 32 60 4 47.5 4 32 16.5 4 32 4Zm0 8a20 20 0 1 0 0 40 20 20 0 0 0 0-40Zm-3 6h6l1 10 8 17h-8l-4-9-4 9h-8l8-17 1-10Z"/></svg></span><span><strong>Escuela de Manejo</strong><small>Panamá Este</small></span></a>
+        <p>Formación vial para conductores más seguros, preparados y confiados.</p>
+      </div>
+      <div><h4>Navegación</h4><a href="#cursos">Cursos</a><a href="#proceso">Cómo funciona</a><a href="#licencias">Licencias</a><a href="#faq">Preguntas frecuentes</a></div>
+      <div><h4>Contacto</h4><a class="js-whatsapp" href="#" data-message="Hola, quiero información sobre los cursos de manejo.">WhatsApp</a><a id="footerInstagram" target="_blank" rel="noopener">Instagram</a><a href="#contacto">Solicitar información</a></div>
+      <div><h4>Horario</h4><p id="footerHours">Lunes a sábado<br>8:00 a.m. – 5:00 p.m.</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Escuela de Manejo Panamá Este.</span><span>Sitio demostrativo.</span></div>
+  </footer>
+
+  <a class="whatsapp-float js-whatsapp" href="#" aria-label="Contactar por WhatsApp" data-message="Hola, quisiera información sobre los cursos de manejo.">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3a12.5 12.5 0 0 0-10.7 19L4 29l7.2-1.2A12.5 12.5 0 1 0 16 3Zm0 22.7c-1.8 0-3.5-.5-5-1.3l-.4-.2-4.2.7.8-4.1-.3-.4A10.2 10.2 0 1 1 16 25.7Zm5.6-7.6c-.3-.1-1.8-.9-2.1-1-.3-.1-.5-.1-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-2-.8-3.5-2.1-4.6-4-.3-.5.3-.5.9-1.7.1-.2 0-.5 0-.7l-1-2.4c-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9 0 1.7 1.2 3.3 1.4 3.5.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 1.8-.7 2.1-1.5.3-.7.3-1.4.2-1.5-.2-.2-.5-.3-.8-.4Z"/></svg>
+  </a>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
