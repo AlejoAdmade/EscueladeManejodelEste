@@ -59,10 +59,7 @@ function bindWhatsapp() {
 }
 
 function openWhatsApp(message) {
-  if (!DATA.whatsapp || DATA.whatsapp === '50760000000') {
-    alert('DEMO: reemplaza el número de WhatsApp en js/data.js antes de publicar.\n\nMensaje:\n' + message);
-    return;
-  }
+  if (!DATA.whatsapp) return;
   window.open(`https://wa.me/${DATA.whatsapp}?text=${encodeURIComponent(message)}`, '_blank', 'noopener');
 }
 
@@ -131,15 +128,24 @@ function setupProcessDemo() {
 }
 
 function applySiteData() {
-  document.getElementById('instagramBtn').href = DATA.instagram;
-  document.getElementById('footerInstagram').href = DATA.instagram;
-  document.getElementById('addressText').textContent = DATA.address;
-  document.getElementById('mapAddress').textContent = DATA.address;
-  document.getElementById('hoursText').textContent = DATA.hours;
-  document.getElementById('footerHours').innerHTML = DATA.hours.replace(' · ', '<br>');
-  const q = encodeURIComponent(DATA.mapQuery);
-  document.getElementById('mapFrame').src = `https://maps.google.com/maps?q=${q}&z=15&output=embed`;
-  document.getElementById('mapsLink').href = `https://www.google.com/maps/search/?api=1&query=${q}`;
+  const instagramBtn = document.getElementById('instagramBtn');
+  if (instagramBtn) instagramBtn.href = DATA.instagram;
+  const footerInstagram = document.getElementById('footerInstagram');
+  if (footerInstagram) footerInstagram.href = DATA.instagram;
+  const addressText = document.getElementById('addressText');
+  if (addressText) addressText.textContent = DATA.address;
+  const mapAddress = document.getElementById('mapAddress');
+  if (mapAddress) mapAddress.textContent = `${DATA.address} · ${DATA.addressDetail}`;
+  const whatsappText = document.getElementById('whatsappText');
+  if (whatsappText) whatsappText.textContent = DATA.phoneDisplay;
+  const telephoneText = document.getElementById('telephoneText');
+  if (telephoneText) telephoneText.textContent = DATA.telephone;
+  const mapFrame = document.getElementById('mapFrame');
+  if (mapFrame) mapFrame.src = DATA.wazeEmbed;
+  const mapsLink = document.getElementById('mapsLink');
+  if (mapsLink) mapsLink.href = DATA.wazeLink;
+  const footerWaze = document.getElementById('footerWaze');
+  if (footerWaze) footerWaze.href = DATA.wazeLink;
   document.getElementById('year').textContent = new Date().getFullYear();
 }
 
