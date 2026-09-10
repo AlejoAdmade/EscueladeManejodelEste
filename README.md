@@ -1,24 +1,26 @@
-# Escuela de Manejo Panamá Este — V4 modular
+# Escuela de Manejo Panamá Este — V4.2
 
-## Estructura pública
-- `/` Página principal resumida
-- `/servicios/certificacion-licencias/` Para quienes ya saben conducir
-- `/servicios/curso-completo/` Para quienes no saben conducir
-- `/servicios/ampliaciones/` Ampliaciones
-- `/servicios/servicios-adicionales/` Alcoholemia, regatas, piratería y exceso de velocidad
+Versión modular de la web con:
 
-Ya no existen páginas individuales por cada licencia.
+- Página principal visual mejorada.
+- 4 módulos de servicios.
+- URLs limpias sin `.html`.
+- Sección de ubicación con mapa de Waze.
+- Botón directo para abrir la ruta en Waze.
+- Google Sheets conectado **directamente por CSV**, sin Google Apps Script.
+- Precios dinámicos, ofertas, teléfonos, WhatsApp, dirección, horario, Waze, Instagram y avisos administrables desde Sheets.
 
-## Precios desde Google Sheets
-1. Crea un Google Sheet.
-2. Importa `google-sheets/PRECIOS.csv` en una pestaña llamada `PRECIOS`.
-3. Importa `google-sheets/CONFIGURACION.csv` en una pestaña llamada `CONFIGURACION`.
-4. En Extensiones > Apps Script pega `google-sheets/Code.gs`.
-5. Cambia `SHEET_ID` por el ID de la hoja.
-6. Implementa como Aplicación web: ejecutar como tú y acceso `Cualquier usuario`.
-7. Copia la URL que termina en `/exec`.
-8. Pégala en `js/config.js` en `googleSheetsApi`.
+## Módulos
 
-Desde ese momento el cliente puede cambiar PRECIO, OFERTA, MOSTRAR, teléfono, WhatsApp y aviso desde Sheets sin editar GitHub.
+- `servicios/certificacion-licencias/`
+- `servicios/curso-completo/`
+- `servicios/ampliaciones/`
+- `servicios/servicios-adicionales/`
 
-Si la API no responde, la web no se rompe: muestra `Consultar`.
+## Google Sheets
+
+Consulta `google-sheets/SETUP.md`.
+
+La web sigue alojándose completamente en GitHub Pages. Google Sheets solo funciona como fuente pública de datos para que la escuela pueda cambiar precios/configuración sin tocar el código.
+
+La web funciona aunque todavía no hayas conectado Google Sheets. En ese caso usa los valores de respaldo de `js/config.js` y muestra `Consultar` en los precios.
