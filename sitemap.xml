@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/servicios/primera-licencia/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/servicios/certificacion-licencias/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/servicios/ampliaciones/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/servicios/recuperacion-licencia/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/a/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/c/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/d/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/e1/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/e2/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/e3/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/f/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/g/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/h/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/licencias/i/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/</loc></url>
+<url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/servicios/certificacion-licencias/</loc></url>
+<url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/servicios/curso-completo/</loc></url>
+<url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/servicios/ampliaciones/</loc></url>
+<url><loc>https://alejoadmade.github.io/EscueladeManejodelEste/servicios/servicios-adicionales/</loc></url>
 </urlset>
