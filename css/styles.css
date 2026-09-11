@@ -66,3 +66,20 @@
 .amplia-help{padding:18px 0 24px;border-top:1px solid #edf1f5}.amplia-help h2{font-size:31px;margin-bottom:4px}.amplia-footer{padding:30px 0}.amplia-footer .footer-grid{grid-template-columns:1.2fr .7fr 1fr}.amplia-footer p{font-size:12px;color:#6a7690}
 @media(max-width:900px){.amplia-header .nav{display:none}.amplia-hero-grid{grid-template-columns:1fr}.amplia-hero-copy{padding:46px 0 28px}.amplia-hero-media{min-height:330px}.amplia-hero-media:before{width:100%;height:80px;inset:0 0 auto;background:linear-gradient(180deg,#fff,transparent)}.amplia-hero h1{font-size:56px}.amplia-category-card{grid-template-columns:1fr}.amplia-requirement{border-left:0;border-top:1px solid #dce3ed;padding:17px 24px}.amplia-package-row,.amplia-help-row{align-items:flex-start;flex-direction:column}.amplia-footer .footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.amplia-header .topbar{height:74px}.amplia-header .brand img{width:120px;height:64px}.amplia-hero-copy{padding-top:38px}.amplia-hero h1{font-size:46px}.amplia-hero-copy p{font-size:17px}.amplia-hero-media{min-height:250px}.amplia-section h2{font-size:34px}.amplia-category-main{padding:16px}.amplia-license-line{grid-template-columns:42px 44px 1fr;font-size:13px}.amplia-requirement{padding:16px}.amplia-package h2,.amplia-includes h2,.amplia-help h2{font-size:27px}.amplia-action{width:100%}.amplia-includes-grid{grid-template-columns:1fr}.amplia-includes-grid article:first-child{border-right:0;border-bottom:1px solid #e1e6ef}.amplia-footer .footer-grid{grid-template-columns:1fr}}
+
+
+/* ===== PRECIOS DINÁMICOS — Google Sheets ===== */
+.module-price{font-weight:900;color:#071b4a}
+.module-price small{display:block;font-size:12px;font-weight:600;color:#8792a6;text-decoration:line-through;margin-bottom:2px}
+.module-price.sale{color:#ef2432}
+.cert-price{margin:auto 0 16px;text-align:left;font-size:22px;line-height:1.1}
+.course-price{align-self:flex-start;text-align:left;font-size:24px;line-height:1.1;margin:-8px 0 20px}
+.amplia-license-line{grid-template-columns:48px 52px minmax(0,1fr) auto}
+.amplia-line-price{min-width:92px;text-align:right;font-size:14px;line-height:1.15;color:#071b4a}
+.amplia-line-price small{display:block;font-size:10px;font-weight:500;color:#8792a6;text-decoration:line-through;margin-bottom:1px}
+.amplia-line-price.sale{color:#ef2432}
+.recovery-other-prices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:18px}
+.recovery-other-prices>div{padding:10px 12px;background:#fff;border:1px solid #e3e8f1;border-radius:8px}
+.recovery-other-prices strong{display:block;font-size:13px;margin-bottom:5px;color:#071b4a}
+.recovery-other-prices .price{text-align:left;font-size:14px}
+@media(max-width:600px){.amplia-license-line{grid-template-columns:42px 44px minmax(0,1fr);gap:5px}.amplia-line-price{grid-column:3;text-align:left;margin-top:2px;min-width:0}.recovery-other-prices{grid-template-columns:1fr}.course-price{font-size:22px}}

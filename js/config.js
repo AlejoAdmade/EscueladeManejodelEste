@@ -2,7 +2,7 @@ window.SITE_CONFIG = {
   // Google Sheets DIRECTO (sin Apps Script).
   // 1) Publica cada pestaña del Sheet como CSV.
   // 2) Pega aquí las dos URLs que terminan en output=csv.
-  preciosCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQY9uMee1vJ1s7_MpAYhbeGiKyCQ-L8QiVjzy6YSkKUkRIk1yhn_pwoQEicqQgQcofm8LdhjPITfmXL/pub?gid=1217841501&single=true&output=csv",
+  preciosCsvUrl: "",
   configuracionCsvUrl: "",
 
   // Valores de respaldo mientras Google Sheets no esté conectado o no responda.
