@@ -90,3 +90,7 @@
 .cert-price{margin:0!important;text-align:left!important;font-size:22px!important;line-height:1.1!important;font-weight:900!important;color:#071b4a!important;display:block!important;visibility:visible!important;opacity:1!important;min-height:24px}
 .cert-price.sale{color:#ef2432!important}
 .cert-card-wa{margin-top:auto}
+
+
+/* PRICE VISIBILITY */
+[hidden]{display:none!important}

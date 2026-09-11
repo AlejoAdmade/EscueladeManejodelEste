@@ -109,24 +109,45 @@ function renderRemote() {
 
   document.querySelectorAll('[data-price]').forEach(el => {
     const item = prices[el.dataset.price];
-    el.classList.remove('sale');
+    const box = el.closest('[data-price-box]');
 
+    const hidePrice = () => {
+      el.classList.remove('sale');
+      el.innerHTML = '';
+      el.hidden = true;
+      if (box) box.hidden = true;
+    };
+
+    const showPrice = () => {
+      el.hidden = false;
+      if (box) box.hidden = false;
+    };
+
+    // Si no existe un precio válido, no mostramos un texto de respaldo.
     if (!item || String(item.mostrar || 'SI').trim().toUpperCase() === 'NO') {
-      el.textContent = 'Consultar';
+      hidePrice();
       return;
     }
 
     const sale = Number(String(item.oferta || '').replace(',', '.'));
     const regular = Number(String(item.precio || '').replace(',', '.'));
+    const hasSale = Number.isFinite(sale) && sale > 0;
+    const hasRegular = Number.isFinite(regular) && regular > 0;
 
-    if (Number.isFinite(sale) && sale > 0) {
-      const regularText = Number.isFinite(regular) && regular > 0 ? `<small>${money(regular)}</small>` : '';
+    if (!hasSale && !hasRegular) {
+      hidePrice();
+      return;
+    }
+
+    showPrice();
+    el.classList.remove('sale');
+
+    if (hasSale) {
+      const regularText = hasRegular ? `<small>${money(regular)}</small>` : '';
       el.innerHTML = `${regularText}${money(sale)}`;
       el.classList.add('sale');
-    } else if (Number.isFinite(regular) && regular > 0) {
-      el.textContent = money(regular);
     } else {
-      el.textContent = item.texto || 'Consultar';
+      el.textContent = money(regular);
     }
   });
 
