@@ -187,12 +187,13 @@ function renderRemote() {
     notice.hidden = !(active && text);
 
     if (active && text) {
+      const safe = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
       notice.innerHTML = `
-        <div class="global-notice-marquee" role="status" aria-label="${text.replace(/"/g, '&quot;')}">
+        <div class="global-notice-marquee" role="status" aria-label="${safe}">
           <div class="global-notice-track">
-            <span>✦ ${text} ✦</span>
-            <span aria-hidden="true">✦ ${text} ✦</span>
-            <span aria-hidden="true">✦ ${text} ✦</span>
+            <span>✦ ${safe} ✦</span>
+            <span aria-hidden="true">✦ ${safe} ✦</span>
+            <span aria-hidden="true">✦ ${safe} ✦</span>
           </div>
         </div>`;
     } else {
