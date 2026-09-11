@@ -183,8 +183,21 @@ function renderRemote() {
   const notice = document.querySelector('[data-aviso]');
   if (notice) {
     const active = String(c.aviso_activo || '').trim().toUpperCase() === 'SI';
-    notice.hidden = !active;
-    notice.textContent = active ? (c.aviso_texto || '') : '';
+    const text = String(c.aviso_texto || '').trim();
+    notice.hidden = !(active && text);
+
+    if (active && text) {
+      notice.innerHTML = `
+        <div class="global-notice-marquee" role="status" aria-label="${text.replace(/"/g, '&quot;')}">
+          <div class="global-notice-track">
+            <span>✦ ${text} ✦</span>
+            <span aria-hidden="true">✦ ${text} ✦</span>
+            <span aria-hidden="true">✦ ${text} ✦</span>
+          </div>
+        </div>`;
+    } else {
+      notice.innerHTML = '';
+    }
   }
 }
 
